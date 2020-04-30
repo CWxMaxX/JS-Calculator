@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFD5A0;
+}
+header{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+    height: 60px;
+    background-color: #FF8C00;
+    color: #B36200;
+    box-shadow: black 0px 0px  10px  0px;
+    padding: 5px;
+}
+header p{
+    text-shadow: 2px 2px 5px  black;
+}
+header img{
+    margin: auto 5px;
+    
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+main {
+    min-height: calc(100vh - 74px - 30px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px , auto) repeat(5,100px);
+}
+main> button{
+    cursor: pointer;
+    font-size: 2em;
+    border: 2px solid #FFD5A0;
+    outline: none;
+    font-weight: bold;
+    font-family: inherit;
+    background-color: #805826ab;
+    border-radius: 10px;
+}
+
+main > button:hover{
+    background-color: #FF8C00;
+    
+}
+.span-two{
+    grid-column: span 2;
+}
+.outPut{
+    border: 2px solid #FFD5A0;
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, 0.795);
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: bold;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px;
+}
+.preOp{
+    color: rgba(255, 255, 255, 0.616);
+    font-size: 1.5em ;
+}
+.cuOp{
+    font-size: 2.5em;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+footer{
+    min-height: 30px;
+    background-color: #FF8C00;
+    padding: 7px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #FFD5A0;
+    text-shadow: black 2px 2px 5px;
+}
+footer p{
+    padding:  6px;
+}
+
+footer span{
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    text-decoration: underline;
+    
+}
